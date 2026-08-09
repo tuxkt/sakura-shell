@@ -68,6 +68,10 @@
       # Control center active toggles: ice blue.
       controlCenterTileColorMode = "secondary";
 
+      # Earlier low-battery warnings than the defaults (20/10).
+      batteryLowThreshold = 25;
+      batteryCriticalThreshold = 12;
+
       # Bar launcher button: heart instead of the 9-dot app grid icon.
       launcherLogoMode = "custom";
       launcherLogoCustomPath = "/home/tux/.local/share/dms-icons/heart.png";
@@ -110,7 +114,6 @@
     xwayland-satellite
     ghostty
     nerd-fonts.jetbrains-mono
-    bibata-cursors
     loupe
   ];
 
@@ -142,12 +145,12 @@
     };
   };
 
-  # Modern rounded cursor + clean icon set. Colors untouched, just crisper
-  # shapes than the system defaults (Breeze/Adwaita).
+  # Catppuccin Mocha Pink cursor -- matches the sakura pink theme instead
+  # of the previous neutral white/ice Bibata cursor.
   home.pointerCursor = {
     enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Ice";
+    package = pkgs.catppuccin-cursors.mochaPink;
+    name = "catppuccin-mocha-pink-cursors";
     size = 24;
     gtk.enable = true;
     x11.enable = true;
