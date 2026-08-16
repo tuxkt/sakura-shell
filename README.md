@@ -20,9 +20,6 @@ NixOS configuration (`/etc/nixos`), just the user environment.
   binary name) are deliberately left alone.
 - **Custom launcher icon** — a heart instead of the default 9-dot app grid,
   colorized to match the theme (`assets/heart.png`)
-- **About tab logo swap** — replaced with a fan-art image (`assets/astolfo.png`).
-  ⚠️ This is fan art of an existing copyrighted character, used here purely
-  for personal customization — swap it for your own image if you fork this.
 - **KDE-style dock** — always visible, laptop-screen only (not the second
   monitor), with a pinned app launcher button
 - **Catppuccin Mocha Pink cursor theme**
